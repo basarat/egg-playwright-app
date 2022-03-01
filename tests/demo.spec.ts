@@ -12,8 +12,8 @@ test.describe('App', () => {
   });
 
   test('Link should be valid', async ({ page }) => {
-    const logo = page.locator('a', { hasText: 'Learn React' });
-    await expect(logo).toBeVisible();
-    await expect(logo).toHaveAttribute('href', 'https://reactjs.org');
+    const link = page.locator('a', { hasText: 'Learn React' });
+    await expect(link).toBeVisible();
+    await expect(link).toHaveAttribute('href', 'https://reactjs.org');
   });
 });
